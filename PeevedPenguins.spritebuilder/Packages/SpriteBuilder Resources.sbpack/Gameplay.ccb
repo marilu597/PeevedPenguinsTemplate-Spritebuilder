@@ -795,7 +795,7 @@
 				<key>displayName</key>
 				<string>contentNode</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_contentNode</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -829,8 +829,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>960</real>
+							<real>320</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
