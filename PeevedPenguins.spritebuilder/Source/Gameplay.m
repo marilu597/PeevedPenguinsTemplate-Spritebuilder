@@ -13,6 +13,7 @@
     CCNode *_contentNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
+    CCNode *_pullbackNode;
 }
 
 // Is called when CCB file has completed loading
@@ -50,6 +51,10 @@
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [_contentNode runAction:follow];
+    
+    // Deactivate collisions for the _pullbackNode
+    // Nothing shall collide with our invisible nodes
+    _pullbackNode.physicsBody.collisionMask = @[];
 }
 
 -(void) retry {
