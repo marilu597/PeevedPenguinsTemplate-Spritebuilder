@@ -10,6 +10,7 @@
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
+    CCNode *_contentNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
 }
@@ -45,7 +46,7 @@
     // Ensure followed object is in visible area when starting
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
-    [self runAction:follow];
+    [_contentNode runAction:follow];
 }
 
 -(void) retry {
