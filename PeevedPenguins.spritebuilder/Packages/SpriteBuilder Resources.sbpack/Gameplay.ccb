@@ -486,8 +486,8 @@
 									<real>48.307144165039062</real>
 								</array>
 								<array>
-									<real>960.8446044921875</real>
-									<real>52.640361785888672</real>
+									<real>959.3636474609375</real>
+									<real>47.906730651855469</real>
 								</array>
 								<array>
 									<real>960</real>
@@ -502,15 +502,9 @@
 										<real>0.0</real>
 									</array>
 									<array>
-										<real>960.8446044921875</real>
-										<real>52.640361785888672</real>
+										<real>959.3636474609375</real>
+										<real>47.906730651855469</real>
 									</array>
-									<array>
-										<real>530.906982421875</real>
-										<real>48.307144165039062</real>
-									</array>
-								</array>
-								<array>
 									<array>
 										<real>530.906982421875</real>
 										<real>48.307144165039062</real>
@@ -521,10 +515,6 @@
 									</array>
 									<array>
 										<real>0.0</real>
-										<real>0.0</real>
-									</array>
-									<array>
-										<real>960</real>
 										<real>0.0</real>
 									</array>
 								</array>
@@ -622,8 +612,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -702,6 +690,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
