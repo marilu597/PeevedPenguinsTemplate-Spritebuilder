@@ -48,8 +48,22 @@
         // Setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 144) restLength:0.f stiffness:3000.f damping:150.f];
     }
-    
-    [self launchPenguin];
+}
+
+-(void) touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    // Whenever touches move, update the position of the mouseJointNode to the touch position
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
+    _mouseJointNode.position = touchLocation;
+}
+
+-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    // When touches end, meaning the user releases their finger, release the catapult
+    [self releaseCatapult];
+}
+
+-(void) touchCancelled:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    // Whent touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
+    [self releaseCatapult];
 }
 
 -(void) launchPenguin {
@@ -71,6 +85,16 @@
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [_contentNode runAction:follow];
     
+}
+
+-(void) releaseCatapult {
+    if (_mouseJoint != nil) {
+        // Releases the joint and lets the catapult snap back
+        [_mouseJoint invalidate];
+        _mouseJoint = nil;
+    }
+    
+    [self launchPenguin];
 }
 
 -(void) retry {
