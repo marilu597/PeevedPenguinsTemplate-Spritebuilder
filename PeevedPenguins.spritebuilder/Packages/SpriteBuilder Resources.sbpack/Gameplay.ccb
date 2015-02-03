@@ -202,7 +202,7 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>2.8421709430404007e-14</real>
+						<real>0.0</real>
 						<real>14</real>
 					</array>
 				</dict>
@@ -213,8 +213,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>32.965053558349609</real>
-						<real>144.09063720703125</real>
+						<real>34</real>
+						<real>144</real>
 					</array>
 				</dict>
 				<dict>
@@ -267,6 +267,8 @@
 					<real>500</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>

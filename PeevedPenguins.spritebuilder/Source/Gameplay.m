@@ -29,6 +29,7 @@
     // Deactivate collisions for the _pullbackNode
     // Nothing shall collide with our invisible nodes
     _pullbackNode.physicsBody.collisionMask = @[];
+    _mouseJointNode.physicsBody.collisionMask = @[];
     
     // Visualize physics bodies & joints
     _physicsNode.debugDraw = TRUE;
@@ -36,6 +37,18 @@
 
 // Called on every touch in this scene
 -(void) touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
+    
+    // Start catapult draggin when a touch inside of the catapult arm occurs
+    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation)) {
+        // Move the mouseJointNode to the touch position
+        _mouseJointNode.position = touchLocation;
+        
+        // Setup a spring joint between the mouseJointNode and the catapultArm
+        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 144) restLength:0.f stiffness:3000.f damping:150.f];
+    }
+    
     [self launchPenguin];
 }
 
