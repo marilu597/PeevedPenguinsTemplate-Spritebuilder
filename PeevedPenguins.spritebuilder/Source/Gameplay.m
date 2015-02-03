@@ -51,8 +51,6 @@ static const float MIN_SPEED = 5.f;
         // If speed is below minimum speed, assume this attempt is over
         // ccpLength calculates distance between the point given and origin. Calculates the square length of the velocity (Pitagoras)
         if (_currentPenguin != nil && ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
-            CCLOG(@"---------------------------------------------------------------");
-            CCLOG(@"if 1, penguin: %@, velocity: %@", _currentPenguin, NSStringFromCGPoint(_currentPenguin.physicsBody.velocity));
             [self nextAttempt];
             return;
         }
@@ -60,7 +58,6 @@ static const float MIN_SPEED = 5.f;
         int xMin = _currentPenguin.boundingBox.origin.x;
         
         if (xMin < self.boundingBox.origin.x) {
-            CCLOG(@"if 2");
             [self nextAttempt];
             return;
         }
@@ -68,7 +65,6 @@ static const float MIN_SPEED = 5.f;
         int xMax = xMin + _currentPenguin.boundingBox.size.width;
         
         if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
-            CCLOG(@"if 3");
             [self nextAttempt];
             return;
         }
@@ -204,8 +200,6 @@ static const float MIN_SPEED = 5.f;
 -(void) nextAttempt {
     _currentPenguin = nil;
     [_contentNode stopAction:_followPenguin];
-    
-    CCLOG(@"Next attempt. penguin: %@", _currentPenguin);
     
     
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
