@@ -42,7 +42,7 @@ static const float MIN_SPEED = 5.f;
     _physicsNode.collisionDelegate = self;
     
     // Visualize physics bodies & joints
-    _physicsNode.debugDraw = TRUE;
+    //_physicsNode.debugDraw = TRUE;
 }
 
 -(void) update:(CCTime)delta {
