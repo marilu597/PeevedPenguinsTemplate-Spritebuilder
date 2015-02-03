@@ -47,7 +47,7 @@ static const float MIN_SPEED = 5.f;
 -(void) update:(CCTime)delta {
     // If speed is below minimum speed, assume this attempt is over
     // ccpLength calculates distance between the point given and origin. Calculates the square length of the velocity (Pitagoras)
-    if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
+    if (_currentPenguin != nil && ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
         CCLOG(@"---------------------------------------------------------------");
         CCLOG(@"if 1, penguin: %@, velocity: %@", _currentPenguin, NSStringFromCGPoint(_currentPenguin.physicsBody.velocity));
         [self nextAttempt];
