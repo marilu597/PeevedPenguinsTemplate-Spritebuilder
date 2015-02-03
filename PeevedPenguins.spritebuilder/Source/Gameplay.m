@@ -10,6 +10,7 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
+    CCAction *_followPenguin;
     CCPhysicsNode *_physicsNode;
     CCNode *_contentNode;
     CCNode *_catapultArm;
@@ -20,6 +21,8 @@
     CCNode *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
 }
+
+static const float MIN_SPEED = 5.f;
 
 // Is called when CCB file has completed loading
 -(void) didLoadFromCCB {
@@ -39,6 +42,29 @@
     
     // Visualize physics bodies & joints
     _physicsNode.debugDraw = TRUE;
+}
+
+-(void) update:(CCTime)delta {
+    // If speed is below minimum speed, assume this attempt is over
+    // ccpLength calculates distance between the point given and origin. Calculates the square length of the velocity (Pitagoras)
+    if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
+        [self nextAttempt];
+        return;
+    }
+    
+    int xMin = _currentPenguin.boundingBox.origin.x;
+    
+    if (xMin < self.boundingBox.origin.x) {
+        [self nextAttempt];
+        return;
+    }
+    
+    int xMax = xMin + _currentPenguin.boundingBox.size.width;
+    
+    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+        [self nextAttempt];
+        return;
+    }
 }
 
 // Called on every touch in this scene
@@ -126,8 +152,8 @@
         _currentPenguin.physicsBody.allowsRotation = YES;
         
         // Follow the flying penguin
-        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-        [_contentNode runAction:follow];
+        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:_followPenguin];
     }
 }
 
@@ -164,6 +190,14 @@
     
     // Finally, remove the destroyed seal
     [seal removeFromParent];
+}
+
+-(void) nextAttempt {
+    _currentPenguin = nil;
+    [_contentNode stopAction:_followPenguin];
+    
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
+    [_contentNode runAction:actionMoveTo];
 }
 
 @end
