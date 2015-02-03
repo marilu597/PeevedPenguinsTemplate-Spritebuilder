@@ -33,6 +33,9 @@
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
     
+    // Sign up as the collision delegate of our physics node
+    _physicsNode.collisionDelegate = self;
+    
     // Visualize physics bodies & joints
     _physicsNode.debugDraw = TRUE;
 }
@@ -130,6 +133,10 @@
 -(void) retry {
     // Reload this level
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
+}
+
+-(void) ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    CCLOG(@"Something collided with a seal!");
 }
 
 @end
