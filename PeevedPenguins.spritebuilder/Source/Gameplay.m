@@ -47,7 +47,7 @@ static const float MIN_SPEED = 5.f;
 
 -(void) update:(CCTime)delta {
     
-    //if (_currentPenguin.launched) {
+    if (_currentPenguin.launched) {
         // If speed is below minimum speed, assume this attempt is over
         // ccpLength calculates distance between the point given and origin. Calculates the square length of the velocity (Pitagoras)
         if (_currentPenguin != nil && ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
@@ -72,7 +72,7 @@ static const float MIN_SPEED = 5.f;
             [self nextAttempt];
             return;
         }
-    //}
+    }
 }
 
 // Called on every touch in this scene
