@@ -1807,8 +1807,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>97.890495300292969</real>
-							<real>70.6141357421875</real>
+							<real>10</real>
+							<real>50</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
