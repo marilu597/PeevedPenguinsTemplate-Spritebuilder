@@ -93,8 +93,6 @@
         [_mouseJoint invalidate];
         _mouseJoint = nil;
     }
-    
-    [self launchPenguin];
 }
 
 -(void) retry {
