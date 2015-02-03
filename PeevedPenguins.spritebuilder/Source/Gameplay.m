@@ -14,6 +14,8 @@
     CCNode *_catapultArm;
     CCNode *_levelNode;
     CCNode *_pullbackNode;
+    CCNode *_mouseJointNode;
+    CCPhysicsJoint *_mouseJoint;
 }
 
 // Is called when CCB file has completed loading
@@ -23,6 +25,10 @@
     
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
+    
+    // Deactivate collisions for the _pullbackNode
+    // Nothing shall collide with our invisible nodes
+    _pullbackNode.physicsBody.collisionMask = @[];
     
     // Visualize physics bodies & joints
     _physicsNode.debugDraw = TRUE;
@@ -52,9 +58,6 @@
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [_contentNode runAction:follow];
     
-    // Deactivate collisions for the _pullbackNode
-    // Nothing shall collide with our invisible nodes
-    _pullbackNode.physicsBody.collisionMask = @[];
 }
 
 -(void) retry {
