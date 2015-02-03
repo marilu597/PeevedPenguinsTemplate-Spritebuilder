@@ -7,6 +7,7 @@
 //
 
 #import "Gameplay.h"
+#import "Penguin.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
@@ -18,7 +19,7 @@
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
-    CCNode *_currentPenguin;
+    Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
 }
 
@@ -45,30 +46,33 @@ static const float MIN_SPEED = 5.f;
 }
 
 -(void) update:(CCTime)delta {
-    // If speed is below minimum speed, assume this attempt is over
-    // ccpLength calculates distance between the point given and origin. Calculates the square length of the velocity (Pitagoras)
-    if (_currentPenguin != nil && ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
-        CCLOG(@"---------------------------------------------------------------");
-        CCLOG(@"if 1, penguin: %@, velocity: %@", _currentPenguin, NSStringFromCGPoint(_currentPenguin.physicsBody.velocity));
-        [self nextAttempt];
-        return;
-    }
     
-    int xMin = _currentPenguin.boundingBox.origin.x;
-    
-    if (xMin < self.boundingBox.origin.x) {
-        CCLOG(@"if 2");
-        [self nextAttempt];
-        return;
-    }
-    
-    int xMax = xMin + _currentPenguin.boundingBox.size.width;
-    
-    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
-        CCLOG(@"if 3");
-        [self nextAttempt];
-        return;
-    }
+    //if (_currentPenguin.launched) {
+        // If speed is below minimum speed, assume this attempt is over
+        // ccpLength calculates distance between the point given and origin. Calculates the square length of the velocity (Pitagoras)
+        if (_currentPenguin != nil && ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
+            CCLOG(@"---------------------------------------------------------------");
+            CCLOG(@"if 1, penguin: %@, velocity: %@", _currentPenguin, NSStringFromCGPoint(_currentPenguin.physicsBody.velocity));
+            [self nextAttempt];
+            return;
+        }
+        
+        int xMin = _currentPenguin.boundingBox.origin.x;
+        
+        if (xMin < self.boundingBox.origin.x) {
+            CCLOG(@"if 2");
+            [self nextAttempt];
+            return;
+        }
+        
+        int xMax = xMin + _currentPenguin.boundingBox.size.width;
+        
+        if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+            CCLOG(@"if 3");
+            [self nextAttempt];
+            return;
+        }
+    //}
 }
 
 // Called on every touch in this scene
@@ -85,7 +89,7 @@ static const float MIN_SPEED = 5.f;
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(14, 144) restLength:0.f stiffness:3000.f damping:150.f];
         
         // Create a penguin from the ccb-file
-        _currentPenguin = [CCBReader load:@"Penguin"];
+        _currentPenguin = (Penguin *) [CCBReader load:@"Penguin"];
         
         // Initially position it on the scoop. 34, 138 is th eposition in the node space of the _catapultArm
         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
@@ -151,6 +155,7 @@ static const float MIN_SPEED = 5.f;
         // Releases the joint and lets the penguin fly
         [_penguinCatapultJoint invalidate];
         _penguinCatapultJoint = nil;
+        _currentPenguin.launched = YES;
         
         // After snapping, rotation is fine
         _currentPenguin.physicsBody.allowsRotation = YES;
