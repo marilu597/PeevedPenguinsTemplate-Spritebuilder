@@ -16,6 +16,8 @@
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
+    CCNode *_currentPenguin;
+    CCPhysicsJoint *_penguinCatapultJoint;
 }
 
 // Is called when CCB file has completed loading
@@ -45,16 +47,27 @@
         // Move the mouseJointNode to the touch position
         _mouseJointNode.position = touchLocation;
         
-        
         // Setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(14, 144) restLength:0.f stiffness:3000.f damping:150.f];
         
+        // Create a penguin from the ccb-file
+        _currentPenguin = [CCBReader load:@"Penguin"];
         
+        // Initially position it on the scoop. 34, 138 is th eposition in the node space of the _catapultArm
+        CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
         
-        CGPoint touchLocationInArm = [touch locationInNode:_catapultArm];
+        // Transform the world position to the node space to which the penguin will be added (_physicsNode)
+        _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
         
+        // Add it to the physics world
+        [_physicsNode addChild:_currentPenguin];
         
-        //_mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(touchLocationInArm.x, touchLocationInArm.y) restLength:0.f stiffness:3000.f damping:150.f];
+        // We don't want the penguin to rotate in the scoop
+        _currentPenguin.physicsBody.allowsRotation = NO;
+        
+        // Create a joint to keep the penguin fixed to the scoop until the catapult is released
+        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
+        
     }
 }
 
@@ -100,6 +113,16 @@
         // Releases the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
+        
+        // Releases the joint and lets the penguin fly
+        [_penguinCatapultJoint invalidate];
+        _penguinCatapultJoint = nil;
+        
+        // After snapping, rotation is fine
+        _currentPenguin.physicsBody.allowsRotation = YES;
+        
+        // Follow the flying penguin
+        
     }
 }
 
