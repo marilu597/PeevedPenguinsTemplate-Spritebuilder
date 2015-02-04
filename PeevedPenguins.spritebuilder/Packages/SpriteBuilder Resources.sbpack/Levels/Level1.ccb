@@ -3061,8 +3061,6 @@
 								<string>Seal.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -3194,7 +3192,7 @@
 				<key>displayName</key>
 				<string>AllSeals</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_allSeals</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -3259,10 +3257,12 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>Level</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
