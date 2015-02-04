@@ -3203,7 +3203,7 @@
 						<key>type</key>
 						<string>StringSimple</string>
 						<key>value</key>
-						<string></string>
+						<string>allSeals</string>
 					</dict>
 					<dict>
 						<key>name</key>
