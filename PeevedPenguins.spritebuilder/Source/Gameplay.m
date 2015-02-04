@@ -56,7 +56,7 @@ static const float MIN_SPEED = 5.f;
     _physicsNode.collisionDelegate = self;
     
     // Visualize physics bodies & joints
-    _physicsNode.debugDraw = TRUE;
+    //_physicsNode.debugDraw = TRUE;
 }
 
 -(void) update:(CCTime)delta {
@@ -218,7 +218,7 @@ static const float MIN_SPEED = 5.f;
     
     _destroyedSeals++;
     _destroyedSealsLabel.string = [NSString stringWithFormat:@"%d", _destroyedSeals];
-    _destroyedSeals = _totalSeals;
+    
     if ([self gameCompleted]) {
         [self endGame];
     }
@@ -254,6 +254,7 @@ static const float MIN_SPEED = 5.f;
     // The worldSpace is actually the scene world space. So the conversion will vary depending on the camera position
     int xPos = [congratulationsLabel convertToWorldSpace:congratulationsLabel.position].x;
     xPos = congratulationsLabel.positionInPoints.x;
+    // Get width of the screen (the _contentNode is way bigger than the screen)
     int width = [CCDirector sharedDirector].viewSize.width;
     CCLOG(@"xPos: %d", xPos);
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-(xPos-width/2), 0)];
