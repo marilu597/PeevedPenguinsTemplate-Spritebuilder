@@ -24,6 +24,9 @@
     CCAction *_followPenguin;
     
     Level *_level;
+    CCLabelTTF *_remainingSealsLabel;
+    CCLabelTTF *_totalSealsLabel;
+    int _sealsDestroyed;
 }
 
 static const float MIN_SPEED = 5.f;
@@ -33,9 +36,11 @@ static const float MIN_SPEED = 5.f;
     // Tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     
-    //_level = (Level *)[CCBReader loadAsScene:@"Levels/Level1"];
+    // The level implements a custom class that inherits from CCScene, so we don't need to load it as CCScene
+    // CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     _level = (Level *)[CCBReader load:@"Levels/Level1"];
     [_levelNode addChild:_level];
+    _totalSealsLabel.string = [NSString stringWithFormat:@"%lu", [_level countSeals]];
     
     // Deactivate collisions for the _pullbackNode
     // Nothing shall collide with our invisible nodes
@@ -169,7 +174,6 @@ static const float MIN_SPEED = 5.f;
         _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:_followPenguin];
         
-        CCLOG(@"All Seals: %lu", [((Level *)_level) countSeals]);
     }
 }
 
@@ -206,6 +210,10 @@ static const float MIN_SPEED = 5.f;
     
     // Finally, remove the destroyed seal
     [seal removeFromParent];
+    
+    _sealsDestroyed++;
+    _totalSealsLabel.string = [NSString stringWithFormat:@"%d", _sealsDestroyed];
+    
 }
 
 -(void) nextAttempt {
