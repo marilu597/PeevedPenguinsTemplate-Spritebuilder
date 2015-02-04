@@ -8,6 +8,10 @@
 
 #import "Level.h"
 
-@implementation Level
+@implementation Level {
+    CCNode *_allSeals;
+}
+
+
 
 @end
