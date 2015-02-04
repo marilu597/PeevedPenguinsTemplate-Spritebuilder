@@ -252,11 +252,14 @@ static const float MIN_SPEED = 5.f;
     //[_contentNode runAction:follow];
     
     // The worldSpace is actually the scene world space. So the conversion will vary depending on the camera position
-    int xPos = [congratulationsLabel convertToWorldSpace:congratulationsLabel.position].x;
-    xPos = congratulationsLabel.positionInPoints.x;
+    // int xPos = [congratulationsLabel convertToWorldSpace:congratulationsLabel.position].x;
+    // I have ot use positionInPoints instead
+    int xPos = congratulationsLabel.positionInPoints.x;
     // Get width of the screen (the _contentNode is way bigger than the screen)
     int width = [CCDirector sharedDirector].viewSize.width;
-    CCLOG(@"xPos: %d", xPos);
+    
+    // We want the contend node to move to the left, so it seems the camera is moving to the right (to focus the label)
+    // The amount it should move to the left is the total distance to the label anchor point minus half the width of the screen. In this way, we center the label
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-(xPos-width/2), 0)];
     [_contentNode runAction:actionMoveTo];
 
