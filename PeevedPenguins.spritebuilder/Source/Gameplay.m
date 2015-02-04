@@ -74,8 +74,8 @@ static const float MIN_SPEED = 5.f;
 // Called on every touch in this scene
 -(void) touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     
-    // Spawn another penguin only if the previous one stopped moving (therefore the camera is not following it)
-    if (_followPenguin == nil || _followPenguin.isDone) {
+    // Spawn another penguin only if we are no longer following the previous penguin
+    if (_currentPenguin == nil) {
         CGPoint touchLocation = [touch locationInNode:_contentNode];
         
         // Start catapult dragging when a touch inside of the catapult arm occurs
