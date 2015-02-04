@@ -84,7 +84,7 @@
 					<key>type</key>
 					<string>Check</string>
 					<key>value</key>
-					<true/>
+					<false/>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -121,6 +121,14 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>dampedSpringEnabled</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>dampedSpringStiffness</string>
 					<key>type</key>
 					<string>Float</string>
@@ -137,14 +145,6 @@
 						<real>100</real>
 						<false/>
 					</array>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>layoutType</string>
-					<key>type</key>
-					<string>Byte</string>
-					<key>value</key>
-					<integer>1</integer>
 				</dict>
 			</array>
 			<key>selected</key>
