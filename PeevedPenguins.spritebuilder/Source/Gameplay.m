@@ -86,7 +86,7 @@ static const float MIN_SPEED = 5.f;
             // Setup a spring joint between the mouseJointNode and the catapultArm
             _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(14, 144) restLength:0.f stiffness:3000.f damping:150.f];
             
-            _mouseJoint.breakingForce = 10000;
+            _mouseJoint.breakingForce = 999999;
             
             // Create a penguin from the ccb-file
             _currentPenguin = (Penguin *) [CCBReader load:@"Penguin"];
