@@ -1417,7 +1417,7 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>2.5</real>
+			<real>3</real>
 			<key>name</key>
 			<string>BlinkAndJump</string>
 			<key>offset</key>
