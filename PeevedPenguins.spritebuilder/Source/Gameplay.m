@@ -239,7 +239,7 @@ static const float MIN_SPEED = 5.f;
 -(void) endGame {
     CCLabelTTF *congratulationsLabel = [CCLabelTTF labelWithString:@"Congratulations!" fontName:@"Helvetica" fontSize:48.f];
     congratulationsLabel.positionType = CCPositionTypeMake(CCPositionUnitNormalized, CCPositionUnitNormalized, CCPositionReferenceCornerBottomLeft);
-    congratulationsLabel.position = ccp(50, 50);
+    congratulationsLabel.position = ccp(0.5, 0.5);
     [_contentNode addChild:congratulationsLabel];
 }
 
