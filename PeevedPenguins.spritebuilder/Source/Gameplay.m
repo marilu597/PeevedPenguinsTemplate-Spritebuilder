@@ -33,7 +33,8 @@ static const float MIN_SPEED = 5.f;
     // Tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     
-    _level = (Level *)[CCBReader loadAsScene:@"Levels/Level1"];
+    //_level = (Level *)[CCBReader loadAsScene:@"Levels/Level1"];
+    _level = (Level *)[CCBReader load:@"Levels/Level1"];
     [_levelNode addChild:_level];
     
     // Deactivate collisions for the _pullbackNode
