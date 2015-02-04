@@ -251,7 +251,7 @@ static const float MIN_SPEED = 5.f;
     
     int xPos = [congratulationsLabel convertToWorldSpace:congratulationsLabel.position].x;
     CCLOG(@"xPos: %d", xPos);
-    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-congratulationsLabel.position.x, 0)];
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-480, 0)];
     [_contentNode runAction:actionMoveTo];
 
     
