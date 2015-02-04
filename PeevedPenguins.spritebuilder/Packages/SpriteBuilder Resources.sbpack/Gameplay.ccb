@@ -157,7 +157,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>60</real>
+					<real>40</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -169,6 +169,14 @@
 						<real>100</real>
 						<false/>
 					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>layoutType</string>
+					<key>type</key>
+					<string>Byte</string>
+					<key>value</key>
+					<integer>1</integer>
 				</dict>
 			</array>
 			<key>selected</key>
