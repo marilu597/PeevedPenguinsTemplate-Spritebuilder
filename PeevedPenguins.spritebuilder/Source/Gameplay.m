@@ -11,7 +11,6 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
-    CCAction *_followPenguin;
     CCPhysicsNode *_physicsNode;
     CCNode *_contentNode;
     CCNode *_catapultArm;
@@ -21,6 +20,7 @@
     CCPhysicsJoint *_mouseJoint;
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
+    CCAction *_followPenguin;
 }
 
 static const float MIN_SPEED = 5.f;
@@ -74,35 +74,40 @@ static const float MIN_SPEED = 5.f;
 // Called on every touch in this scene
 -(void) touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     
-    CGPoint touchLocation = [touch locationInNode:_contentNode];
-    
-    // Start catapult dragging when a touch inside of the catapult arm occurs
-    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation)) {
-        // Move the mouseJointNode to the touch position
-        _mouseJointNode.position = touchLocation;
+    // Spawn another penguin only if the previous one stopped moving (therefore the camera is not following it)
+    if (_followPenguin.isDone) {
+        CGPoint touchLocation = [touch locationInNode:_contentNode];
         
-        // Setup a spring joint between the mouseJointNode and the catapultArm
-        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(14, 144) restLength:0.f stiffness:3000.f damping:150.f];
-        
-        // Create a penguin from the ccb-file
-        _currentPenguin = (Penguin *) [CCBReader load:@"Penguin"];
-        
-        // Initially position it on the scoop. 34, 138 is th eposition in the node space of the _catapultArm
-        CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
-        
-        // Transform the world position to the node space to which the penguin will be added (_physicsNode)
-        _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
-        
-        // Add it to the physics world
-        [_physicsNode addChild:_currentPenguin];
-        
-        // We don't want the penguin to rotate in the scoop
-        _currentPenguin.physicsBody.allowsRotation = NO;
-        
-        // Create a joint to keep the penguin fixed to the scoop until the catapult is released
-        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
-        
+        // Start catapult dragging when a touch inside of the catapult arm occurs
+        if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation)) {
+            // Move the mouseJointNode to the touch position
+            _mouseJointNode.position = touchLocation;
+            
+            // Setup a spring joint between the mouseJointNode and the catapultArm
+            _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(14, 144) restLength:0.f stiffness:3000.f damping:150.f];
+            
+            // Create a penguin from the ccb-file
+            _currentPenguin = (Penguin *) [CCBReader load:@"Penguin"];
+            
+            // Initially position it on the scoop. 34, 138 is th eposition in the node space of the _catapultArm
+            CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
+            
+            // Transform the world position to the node space to which the penguin will be added (_physicsNode)
+            _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
+            
+            // Add it to the physics world
+            [_physicsNode addChild:_currentPenguin];
+            
+            // We don't want the penguin to rotate in the scoop
+            _currentPenguin.physicsBody.allowsRotation = NO;
+            
+            // Create a joint to keep the penguin fixed to the scoop until the catapult is released
+            _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
+            
+        }
     }
+    
+    
 }
 
 -(void) touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
