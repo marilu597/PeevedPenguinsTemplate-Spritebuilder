@@ -1996,9 +1996,9 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>textRemainingSeals</string>
+						<string>textDestroyedSeals</string>
 						<key>memberVarAssignmentName</key>
-						<string>_remainingSealsLabel</string>
+						<string>_destroyedSealsLabel</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -2192,6 +2192,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -3010,8 +3012,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

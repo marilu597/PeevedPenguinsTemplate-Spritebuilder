@@ -24,9 +24,11 @@
     CCAction *_followPenguin;
     
     Level *_level;
-    CCLabelTTF *_remainingSealsLabel;
+    CCLabelTTF *_destroyedSealsLabel;
     CCLabelTTF *_totalSealsLabel;
-    int _sealsDestroyed;
+    
+    int _destroyedSeals;
+    int _totalSeals;
 }
 
 static const float MIN_SPEED = 5.f;
@@ -40,7 +42,8 @@ static const float MIN_SPEED = 5.f;
     // CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     _level = (Level *)[CCBReader load:@"Levels/Level1"];
     [_levelNode addChild:_level];
-    _totalSealsLabel.string = [NSString stringWithFormat:@"%lu", [_level countSeals]];
+    _totalSeals = (int)[_level countSeals];
+    _totalSealsLabel.string = [NSString stringWithFormat:@"%d", _totalSeals];
     
     // Deactivate collisions for the _pullbackNode
     // Nothing shall collide with our invisible nodes
@@ -211,8 +214,12 @@ static const float MIN_SPEED = 5.f;
     // Finally, remove the destroyed seal
     [seal removeFromParent];
     
-    _sealsDestroyed++;
-    _remainingSealsLabel.string = [NSString stringWithFormat:@"%d", _sealsDestroyed];
+    _destroyedSeals++;
+    _destroyedSealsLabel.string = [NSString stringWithFormat:@"%d", _destroyedSeals];
+    
+    if ([self gameCompleted]) {
+        [self endGame];
+    }
     
 }
 
@@ -223,6 +230,16 @@ static const float MIN_SPEED = 5.f;
     
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
     [_contentNode runAction:actionMoveTo];
+}
+
+-(int) gameCompleted {
+    return _totalSeals == _destroyedSeals;
+}
+
+-(void) endGame {
+    CCLabelTTF *congratulationsLabel = [CCLabelTTF labelWithString:@"Congratulations!" fontName:@"Helvetica" fontSize:48.f];
+    congratulationsLabel.position = ccp(10, 10);
+    [_contentNode addChild:congratulationsLabel];
 }
 
 @end
