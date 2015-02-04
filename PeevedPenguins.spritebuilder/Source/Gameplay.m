@@ -216,7 +216,7 @@ static const float MIN_SPEED = 5.f;
     
     _destroyedSeals++;
     _destroyedSealsLabel.string = [NSString stringWithFormat:@"%d", _destroyedSeals];
-    
+    _destroyedSeals = _totalSeals;
     if ([self gameCompleted]) {
         [self endGame];
     }
