@@ -212,7 +212,7 @@ static const float MIN_SPEED = 5.f;
     [seal removeFromParent];
     
     _sealsDestroyed++;
-    _totalSealsLabel.string = [NSString stringWithFormat:@"%d", _sealsDestroyed];
+    _remainingSealsLabel.string = [NSString stringWithFormat:@"%d", _sealsDestroyed];
     
 }
 
