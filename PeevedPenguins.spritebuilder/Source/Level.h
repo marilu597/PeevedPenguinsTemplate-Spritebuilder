@@ -10,4 +10,6 @@
 
 @interface Level : CCScene
 
+@property (nonatomic) CCNode *_allSeals;
+
 @end

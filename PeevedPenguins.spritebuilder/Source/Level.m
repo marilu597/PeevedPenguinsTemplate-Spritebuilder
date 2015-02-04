@@ -9,7 +9,7 @@
 #import "Level.h"
 
 @implementation Level {
-    CCNode *_allSeals;
+    
 }
 
 
