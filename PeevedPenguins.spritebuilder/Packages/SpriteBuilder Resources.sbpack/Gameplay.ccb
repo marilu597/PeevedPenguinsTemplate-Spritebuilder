@@ -196,8 +196,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>272</real>
-						<real>293</real>
+						<real>280</real>
+						<real>287</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -278,7 +278,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>52.300872802734375</real>
+						<real>40</real>
 						<true/>
 					</array>
 				</dict>
@@ -1019,8 +1019,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>272</real>
-											<real>279</real>
+											<real>280</real>
+											<real>273</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
