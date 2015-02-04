@@ -3192,7 +3192,7 @@
 				<key>displayName</key>
 				<string>AllSeals</string>
 				<key>memberVarAssignmentName</key>
-				<string>_allSeals</string>
+				<string>allSeals</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
