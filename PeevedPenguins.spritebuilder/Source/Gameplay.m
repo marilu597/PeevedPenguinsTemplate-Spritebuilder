@@ -252,7 +252,7 @@ static const float MIN_SPEED = 5.f;
     // The worldSpace is actually the scene world space. So the conversion will vary depending on the camera position
     int xPos = [congratulationsLabel convertToWorldSpace:congratulationsLabel.position].x;
     xPos = congratulationsLabel.positionInPoints.x;
-    int width = congratulationsLabel.boundingBox.size.width;
+    int width = [CCDirector sharedDirector].viewSize.width;
     CCLOG(@"xPos: %d", xPos);
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-(xPos-width/2), 0)];
     [_contentNode runAction:actionMoveTo];
