@@ -249,9 +249,11 @@ static const float MIN_SPEED = 5.f;
     //CCActionFollow *follow = [CCActionFollow actionWithTarget:congratulationsLabel worldBoundary:self.boundingBox];
     //[_contentNode runAction:follow];
     
+    // The worldSpace is actually the scene world space. So the conversion will vary depending on the camera position
     int xPos = [congratulationsLabel convertToWorldSpace:congratulationsLabel.position].x;
+    xPos = congratulationsLabel.positionInPoints.x;
     CCLOG(@"xPos: %d", xPos);
-    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-480, 0)];
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(-xPos, 0)];
     [_contentNode runAction:actionMoveTo];
 
     
