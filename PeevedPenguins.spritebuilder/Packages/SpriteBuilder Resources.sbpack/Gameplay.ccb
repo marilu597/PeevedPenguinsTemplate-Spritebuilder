@@ -141,7 +141,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>-25</real>
+					<real>-10</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -171,6 +171,8 @@
 					<integer>1</integer>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -234,7 +236,7 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>-3.0109248427834245e-13</real>
+						<real>-4.1477932199995848e-13</real>
 						<real>14</real>
 					</array>
 				</dict>
@@ -717,8 +719,6 @@
 										<array/>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
