@@ -723,7 +723,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/38.png</string>
+								<string>animation/39.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -741,7 +741,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/39.png</string>
+								<string>animation/41.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -759,7 +759,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/40.png</string>
+								<string>animation/43.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -777,7 +777,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/41.png</string>
+								<string>animation/45.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -795,7 +795,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/42.png</string>
+								<string>animation/48.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -813,7 +813,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/43.png</string>
+								<string>animation/49.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -831,7 +831,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/44.png</string>
+								<string>animation/51.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -849,7 +849,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/45.png</string>
+								<string>animation/53.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -867,7 +867,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/46.png</string>
+								<string>animation/55.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -885,7 +885,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/47.png</string>
+								<string>animation/57.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -903,7 +903,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/48.png</string>
+								<string>animation/59.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -921,7 +921,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/49.png</string>
+								<string>animation/62.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -939,7 +939,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/50.png</string>
+								<string>animation/64.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -957,7 +957,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/51.png</string>
+								<string>animation/65.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -975,7 +975,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/52.png</string>
+								<string>animation/67.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -993,7 +993,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/53.png</string>
+								<string>animation/69.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1011,7 +1011,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/54.png</string>
+								<string>animation/71.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1029,7 +1029,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/55.png</string>
+								<string>animation/73.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1047,7 +1047,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/56.png</string>
+								<string>animation/75.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1065,7 +1065,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/57.png</string>
+								<string>animation/78.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1083,7 +1083,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/58.png</string>
+								<string>animation/80.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1101,7 +1101,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/59.png</string>
+								<string>animation/81.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1119,7 +1119,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/60.png</string>
+								<string>animation/83.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1137,7 +1137,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/61.png</string>
+								<string>animation/85.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1155,7 +1155,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/62.png</string>
+								<string>animation/87.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1173,7 +1173,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/63.png</string>
+								<string>animation/89.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1191,7 +1191,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/64.png</string>
+								<string>animation/92.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1209,7 +1209,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/65.png</string>
+								<string>animation/94.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1227,7 +1227,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/66.png</string>
+								<string>animation/95.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1245,7 +1245,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/67.png</string>
+								<string>animation/97.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1263,7 +1263,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/68.png</string>
+								<string>animation/99.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1281,7 +1281,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/69.png</string>
+								<string>animation/101.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1299,7 +1299,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/70.png</string>
+								<string>animation/103.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1317,7 +1317,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/71.png</string>
+								<string>animation/105.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1335,7 +1335,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/72.png</string>
+								<string>animation/107.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1353,7 +1353,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/73.png</string>
+								<string>animation/109.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1371,7 +1371,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/74.png</string>
+								<string>animation/112.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1389,7 +1389,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/75.png</string>
+								<string>animation/114.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1407,7 +1407,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/76.png</string>
+								<string>animation/116.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1425,7 +1425,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/77.png</string>
+								<string>animation/118.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -1443,763 +1443,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>animation/78.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.5999999046325684</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/79.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.6333334445953369</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/80.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.6666667461395264</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/81.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.7000000476837158</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/82.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.7333333492279053</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/83.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.7666666507720947</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/84.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.7999999523162842</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/85.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.8333332538604736</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/86.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.8666665554046631</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/87.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.9000000953674316</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/88.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.9333333969116211</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/89.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>2.9666666984558105</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/90.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/91.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.0333333015441895</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/92.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.0666666030883789</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/93.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.0999999046325684</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/94.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.1333334445953369</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/95.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.1666667461395264</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/96.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.2000000476837158</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/97.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.2333333492279053</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/98.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.2666666507720947</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/99.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.2999999523162842</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/100.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.3333332538604736</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/101.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.3666665554046631</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/102.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.4000000953674316</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/103.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.4333333969116211</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/104.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.4666666984558105</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/105.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.5</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/106.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.5333333015441895</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/107.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.5666666030883789</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/108.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.5999999046325684</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/109.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.6333334445953369</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/110.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.6666667461395264</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/111.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.7000000476837158</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/112.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.7333333492279053</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/113.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.7666666507720947</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/114.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.7999999523162842</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/115.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.8333332538604736</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/116.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.8666665554046631</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/117.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.9000000953674316</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/118.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.9333333969116211</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
 								<string>animation/119.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>3.9666666984558105</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>animation/120.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -2320,7 +1564,7 @@
 				<array/>
 			</dict>
 		</array>
-		<key>selected</key>
+		<key>seqExpanded</key>
 		<true/>
 	</dict>
 	<key>notes</key>
@@ -2371,13 +1615,13 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>4</real>
+			<real>3</real>
 			<key>name</key>
 			<string>BlinkAndJump</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>2.5</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
