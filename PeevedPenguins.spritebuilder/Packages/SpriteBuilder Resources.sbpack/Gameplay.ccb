@@ -137,6 +137,22 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>limitMin</string>
+					<key>type</key>
+					<string>Degrees</string>
+					<key>value</key>
+					<real>-25</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>limitMax</string>
+					<key>type</key>
+					<string>Degrees</string>
+					<key>value</key>
+					<real>80</real>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>motorMaxForce</string>
 					<key>type</key>
 					<string>FloatCheck</string>
