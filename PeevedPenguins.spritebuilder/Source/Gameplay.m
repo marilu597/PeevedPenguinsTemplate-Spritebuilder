@@ -242,8 +242,10 @@ static const float MIN_SPEED = 5.f;
     congratulationsLabel.position = ccp(0.5, 0.5);
     [_contentNode addChild:congratulationsLabel];
     
+    _currentPenguin = nil;
     [_contentNode stopAction:_followPenguin];
-    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(congratulationsLabel.position.x, congratulationsLabel.position.y)];
+    //CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(congratulationsLabel.position.x, congratulationsLabel.position.y)];
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
     [_contentNode runAction:actionMoveTo];
 }
 
