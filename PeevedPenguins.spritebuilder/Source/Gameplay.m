@@ -26,6 +26,7 @@
     Level *_level;
     CCLabelTTF *_destroyedSealsLabel;
     CCLabelTTF *_totalSealsLabel;
+    CCNode *_sealCountLayoutBox;
     
     int _destroyedSeals;
     int _totalSeals;
@@ -44,6 +45,7 @@ static const float MIN_SPEED = 5.f;
     [_levelNode addChild:_level];
     _totalSeals = (int)[_level countSeals];
     _totalSealsLabel.string = [NSString stringWithFormat:@"%d", _totalSeals];
+    _sealCountLayoutBox.position = ccp([CCDirector sharedDirector].viewSize.width/2, _sealCountLayoutBox.position.y);
     
     // Deactivate collisions for the _pullbackNode
     // Nothing shall collide with our invisible nodes
