@@ -22,6 +22,8 @@
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
     CCAction *_followPenguin;
+    
+    Level *_level;
 }
 
 static const float MIN_SPEED = 5.f;
@@ -31,8 +33,8 @@ static const float MIN_SPEED = 5.f;
     // Tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     
-    Level *level = (Level *)[CCBReader loadAsScene:@"Levels/Level1"];
-    [_levelNode addChild:level];
+    _level = (Level *)[CCBReader loadAsScene:@"Levels/Level1"];
+    [_levelNode addChild:_level];
     
     // Deactivate collisions for the _pullbackNode
     // Nothing shall collide with our invisible nodes
@@ -165,6 +167,8 @@ static const float MIN_SPEED = 5.f;
         // Follow the flying penguin
         _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:_followPenguin];
+        
+        CCLOG(@"All Seals: %lu", [[[_level getChildByName:@"allSeals" recursively:NO] children] count]);
     }
 }
 
