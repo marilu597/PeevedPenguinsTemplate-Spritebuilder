@@ -9,9 +9,11 @@
 #import "Level.h"
 
 @implementation Level {
-    
+    CCNode *_allSeals;
 }
 
-
+-(NSUInteger) countSeals {
+    return [[_allSeals children] count];
+}
 
 @end

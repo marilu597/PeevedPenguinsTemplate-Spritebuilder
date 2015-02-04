@@ -10,6 +10,6 @@
 
 @interface Level : CCScene
 
-@property (nonatomic) CCNode *allSeals;
+-(NSUInteger) countSeals;
 
 @end
