@@ -8,6 +8,7 @@
 
 #import "Gameplay.h"
 #import "Penguin.h"
+#import "Level.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 
 @implementation Gameplay {
@@ -30,7 +31,7 @@ static const float MIN_SPEED = 5.f;
     // Tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     
-    CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
+    Level *level = (Level *)[CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
     
     // Deactivate collisions for the _pullbackNode
